@@ -1,4 +1,5 @@
 
+
 #include<stdio.h>
 
 //hashing of agents done on basis of they are free or not, as logically there is no area restriction generally in normal such food delivery kind of systems.
@@ -18,4 +19,15 @@ int hashAge(agent * a){
         ret_val=-1;
     }
     return ret_val;
+}
+
+agent * MakeNode_Agent(agent * temp){
+
+}
+
+agent * addAgent(agent * ptr){
+
+agent* temp;
+
+
 }
