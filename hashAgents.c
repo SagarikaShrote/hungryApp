@@ -22,12 +22,22 @@ int hashAge(agent * a){
 }
 
 agent * MakeNode_Agent(agent * temp){
-
+    temp=(agent *)malloc(sizeof(agent));
+    temp->next=NULL;
+    printf("give id\n");
+    scanf("%d",&temp->id);
+    printf("give name\n");
+    scanf("%s",temp->name);
+    printf("give phone no.\n");
+    scanf("%d",&temp->pno);
+    printf("give address\n");
+    scanf("%s",temp->add);
+    temp->free=0;
+    temp->comm=0;
+    return temp; 
 }
 
 agent * addAgent(agent * ptr){
-
-agent* temp;
-
+    agent* temp=MakeNode_Agent(temp);
 
 }

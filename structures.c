@@ -36,7 +36,7 @@ typedef struct agent_type{
 
 typedef struct user_type{
 	int uid;
-	int pno[10];
+	int pno;
 	char name[20];
 	char add[20];
 	char favitem[20];
