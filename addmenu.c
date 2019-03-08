@@ -16,7 +16,7 @@ menu * addMenu(menu * ptr,int s){       //s is the no. of items to be added
         while(i<s){
                 i++;
                 printf("enter name of dish");
-                scanf("%s",&name);
+                scanf("%s",name);
                 printf("input price\n");
                 scanf("%d",&price);
                 temp=MakeNode_Menu(name,price,temp);

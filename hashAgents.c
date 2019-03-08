@@ -1,6 +1,7 @@
 
 
 #include<stdio.h>
+global agent * alloc[2]={NULL,NULL};
 
 //hashing of agents done on basis of they are free or not, as logically there is no area restriction generally in normal such food delivery kind of systems.
 
@@ -37,7 +38,11 @@ agent * MakeNode_Agent(agent * temp){
     return temp; 
 }
 
-agent * addAgent(agent * ptr){
+void addAgent(){
     agent* temp=MakeNode_Agent(temp);
-
+    int i=hashAge(temp);
+    if(i!=-1){
+        temp->next=alloc[i];            //alloc is the array(hash array) for agents which contains two indexes 0,1
+        alloc[i]=temp;
+    }
 }
