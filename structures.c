@@ -19,9 +19,13 @@ typedef struct rest_type{
 	char ctype[10];			//cuisine type
 	char rtype[10];			//category of restaurant (pub, cafe etc)
 	int seats;
+	int pincode;
+	struct rest_type* area;
+	struct rest_type* cuisine;
+	struct rest_type* type;
+	struct rest_type* next;
 					//special facilities
 	menu * mptr;
-	struct rest_type * next;
 } rest;
 
 typedef struct agent_type{
