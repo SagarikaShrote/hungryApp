@@ -8,7 +8,7 @@ typedef struct menu_type{
 } menu;
 
 typedef struct prevorder_type{
-	char item[20];
+	menu * olist;
 	char rname[20];				//name of restaurant from where the order was placed
 	struct prevorder_type * next;
 } prevorder;
@@ -45,13 +45,14 @@ typedef struct user_type{
 } user;
 
 typedef struct order_type{
+	int oid;
 	user * cust;
 	char rname[20];
 	menu * order;
 	agent * dboy;
 	int sum;		//total money to be paid  //this would be done by adding up money while ordering or selecting the menu
 	struct order_type * next;
-} orderlist
+} orderlist;
 
 
 
