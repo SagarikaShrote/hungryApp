@@ -10,9 +10,9 @@ rest* MakeNode_rest()
 	printf("Enter type of restaurant ");
 	scanf("%s",lptr->rtype);
 	printf("Enter Number of seats of restaurant ");
-	scanf("%d",lptr->seats);
+	scanf("%d",&lptr->seats);
 	printf("Enter pincode of restaurant ");
-	scanf("%d",lptr->pincode);
+	scanf("%d",&lptr->pincode);
 	lptr->area = NULL;
 	lptr->cuisine = NULL;
 	lptr->type = NULL;
