@@ -1,3 +1,7 @@
+rest* Name[100];
+rest* Area[100];
+rest* Cuisine[100];
+rest* Type[100];
 int main()
 {
 	int i;
