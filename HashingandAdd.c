@@ -108,8 +108,11 @@ void Add()
 	int i;
 	lptr = (rest*) malloc (sizeof(rest));
 	lptr = MakeNode_rest();
-	Add_name(lptr);
-	Add_area(lptr);
-	Add_cuisine(lptr);
-	Add_type(lptr);
+	if(lptr!=NULL)
+	{
+		Add_name(lptr);
+		Add_area(lptr);
+		Add_cuisine(lptr);
+		Add_type(lptr);
+	}
 }
