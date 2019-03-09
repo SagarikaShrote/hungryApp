@@ -1,7 +1,4 @@
-
-
-#include<stdio.h>
-global agent * alloc[2]={NULL,NULL};
+agent * alloc[2]={NULL,NULL};
 
 //hashing of agents done on basis of they are free or not, as logically there is no area restriction generally in normal such food delivery kind of systems.
 
