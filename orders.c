@@ -11,18 +11,19 @@ void delivered{
 		if(ptr->oid==id ){
 			flag=1;
 			ptr->dboy->comm+=(ptr->sum/10);		//for 10% commision being added to the agent
-			ptr->order->next=ptr->cust->prevorder->olist->next;		//adding order in users preordered list
-			ptr->cust->prevorder->olist=ptr->order;
-			ptr->cust->prevorder->rname=ptr->rname;
 			if(prev==NULL){
 				prev=ptr;
 				ptr=ptr->next;
-				free(prev);
+				
 			}
 			else{
 				prev->next=ptr->next;
-				free(ptr);
+				
 			}
+			ptr->order->next=ptr->cust->prevorder->olist->next;		//adding order in users preordered list
+			ptr->cust->prevorder->olist=ptr->order;
+			ptr->cust->prevorder->rname=ptr->rname;
+			
 		}
 		else
 			prev=ptr;
