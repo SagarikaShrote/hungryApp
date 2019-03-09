@@ -1,6 +1,7 @@
 int main()
 {
 	int i;
+	initiliase();
 	printf("1.Search Restaurant\n");
 	printf("2.Add Restaurant\n");
 	printf("3.Order from Restaurant\n");
