@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-void delivered{
+void delivered(){
 	printf("input order id\n");
 	int id,flag=0;
 	scanf("%d",&id);
@@ -30,4 +30,28 @@ void delivered{
 			ptr=ptr->next;
 	}
 	printf("done\n");
+}
+
+void cancel(){
+	printf("input order id\n");
+	int id,flag=0;
+	scanf("%d",&id);
+	orderlist * ptr=olist,*prev=NULL;				//olist is the assumed starting pointer of the universal order list
+	while(ptr!=NULL && flag==0){
+		if(ptr->oid==id ){
+			flag=1;
+			if(prev==NULL){
+				olist=ptr->next;
+			}
+			else{
+				prev->next=ptr->next;
+				
+			}
+			free(ptr);							//only successfully served orders are added to the previous order list of the user
+		}
+		else
+			prev=ptr;
+			ptr=ptr->next;
+	}
+	printf("cancelled\n");
 }
