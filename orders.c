@@ -12,8 +12,8 @@ void delivered{
 			flag=1;
 			ptr->dboy->comm+=(ptr->sum/10);		//for 10% commision being added to the agent
 			if(prev==NULL){
-				prev=ptr;
-				ptr=ptr->next;
+				olist=ptr->next;
+				
 				
 			}
 			else{
