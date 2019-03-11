@@ -23,7 +23,8 @@ void delivered(){
 			ptr->order->next=ptr->cust->prevorder->olist->next;		//adding order in users preordered list
 			ptr->cust->prevorder->olist=ptr->order;
 			ptr->cust->prevorder->rname=ptr->rname;
-			
+			favitem(ptr->cust);
+			free(ptr);
 		}
 		else
 			prev=ptr;
@@ -59,3 +60,30 @@ void cancel(){
 int order(){
 
 }
+
+/*	void favitem(user * ptr){
+		prevorder * pptr;
+		menu * mptr,*tmptr;
+		char i[20];
+		int freq=0,nfreq=0;
+			while(pptr!=NULL){
+				mptr=pptr->olist;
+				while(mptr!=NULL){
+					tmptr=mptr->next;
+					while(tmptr!=NULL){
+						if(strcmp(mptr->item,tmptr->item)==0){
+							nfreq+=1;
+						}
+						else{
+							tmptr=tmptr->next;
+						}
+					}
+					if(nfreq>freq){
+						freq=nfreq;
+						i=mptr->item;
+					}
+					mptr=mptr->next;
+				}
+				pptr=pptr->next
+			}
+}*/
