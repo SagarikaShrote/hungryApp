@@ -1,4 +1,4 @@
-rest * rr=NULL,r;
+rest * rr=NULL,*r;
 menu*m=NULL,*t;
 int i=10;
 char a='a';
