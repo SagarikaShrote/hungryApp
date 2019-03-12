@@ -30,7 +30,7 @@ typedef struct rest_type{
 
 typedef struct agent_type{
 	int id;
-	int pno[10];
+	int pno;
 	char name[20];
 	char aadd[20];			//area for agent
 	int free;			//to check if he is free or not? 0 means free while 1 means he is already assigned to some order
