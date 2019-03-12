@@ -1,0 +1,154 @@
+rest * rr=NULL,r;
+menu*m=NULL,*t;
+int i=10;
+char a='a';
+
+r=(rest*)malloc(sizeof(rest));
+strcpy(r->rname,"delhiwale");
+strcpy(r->radd,"delhi");
+strcpy(r->ctype,"northindian");
+strcpy(r->rtype,"restaurant");
+r->seats=10;
+r->pincode=121545;
+for(i=10;i<21;i++){
+	t=(menu*)malloc(sizeof(menu));
+	t->next=m;
+	m=t;
+	strcpy(t->item,a);
+	t->price=i;
+	i++;
+	a++;
+}
+r->mptr=m;
+r->area=NULL;
+r->cuisine=NULL;
+r->type=NULL;
+r->next=rr;
+rr=r;
+
+
+a='a';
+r=(rest*)malloc(sizeof(rest));
+strcpy(r->rname,"bhopalwale");
+strcpy(r->radd,"bhopal");
+strcpy(r->ctype,"chinese");
+strcpy(r->rtype,"cafe");
+r->seats=20;
+r->pincode=121685;
+for(i=20;i<31;i++){
+	t=(menu*)malloc(sizeof(menu));
+	t->next=m;
+	m=t;
+	strcpy(t->item,a);
+	t->price=i;
+	i++;
+	a++;
+}
+r->mptr=m;
+r->area=NULL;
+r->cuisine=NULL;
+r->type=NULL;
+r->next=rr;
+rr=r;
+
+a='a';
+r=(rest*)malloc(sizeof(rest));
+strcpy(r->rname,"lalalulu");
+strcpy(r->radd,"nagpur");
+strcpy(r->ctype,"chinese");
+strcpy(r->rtype,"restaurant");
+r->seats=15;
+r->pincode=121761;
+for(i=20;i<31;i++){
+	t=(menu*)malloc(sizeof(menu));
+	t->next=m;
+	m=t;
+	strcpy(t->item,a);
+	t->price=i;
+	i++;
+	a++;
+}
+r->mptr=m;
+r->area=NULL;
+r->cuisine=NULL;
+r->type=NULL;
+r->next=rr;
+rr=r;
+
+
+a='a';
+r=(rest*)malloc(sizeof(rest));
+strcpy(r->rname,"hideout");
+strcpy(r->radd,"nagpur");
+strcpy(r->ctype,"southindian");
+strcpy(r->rtype,"pub");
+r->seats=15;
+r->pincode=121761;
+for(i=20;i<31;i++){
+	t=(menu*)malloc(sizeof(menu));
+	t->next=m;
+	m=t;
+	strcpy(t->item,a);
+	t->price=i;
+	i++;
+	a++;
+}
+r->mptr=m;
+r->area=NULL;
+r->cuisine=NULL;
+r->type=NULL;
+r->next=rr;
+rr=r;
+
+
+a='a';
+r=(rest*)malloc(sizeof(rest));
+strcpy(r->rname,"rollsmania");
+strcpy(r->radd,"nagpur");
+strcpy(r->ctype,"northindian");
+strcpy(r->rtype,"cafe");
+r->seats=10;
+r->pincode=121761;
+for(i=20;i<31;i++){
+	t=(menu*)malloc(sizeof(menu));
+	t->next=m;
+	m=t;
+	strcpy(t->item,a);
+	t->price=i;
+	i++;
+	a++;
+}
+r->mptr=m;
+r->area=NULL;
+r->cuisine=NULL;
+r->type=NULL;
+r->next=rr;
+rr=r;
+
+
+
+a='a';
+r=(rest*)malloc(sizeof(rest));
+strcpy(r->rname,"bikanerwala");
+strcpy(r->radd,"bhopal");
+strcpy(r->ctype,"southindian");
+strcpy(r->rtype,"cafe");
+r->seats=15;
+r->pincode=121685;
+for(i=20;i<31;i++){
+	t=(menu*)malloc(sizeof(menu));
+	t->next=m;
+	m=t;
+	strcpy(t->item,a);
+	t->price=i;
+	i++;
+	a++;
+}
+r->mptr=m;
+r->area=NULL;
+r->cuisine=NULL;
+r->type=NULL;
+r->next=rr;
+rr=r;
+
+
