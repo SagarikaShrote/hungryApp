@@ -17,6 +17,9 @@ void data_rest(){
 		strcpy(r->rtype,rtype);
 		r->seats=seat;
 		r->pincode=pin;
+		r->area=NULL;
+		r->cuisine=NULL;
+		r->type=NULL;
 		r->mptr=(menu*)malloc(sizeof(menu));
 		r->mptr->next=NULL;
 		strcpy(r->mptr->item,in);
