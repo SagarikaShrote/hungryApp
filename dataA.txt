@@ -1,5 +1,5 @@
-12 ashish bajaj 12345
-45 santosh ambazari 123456
-67 rahul wardha 2345678
-87 keshav tundra 45678
-54 shankar ramnagar 234567
+ashish bajaj 12345
+santosh ambazari 123456
+rahul wardha 2345678
+keshav tundra 45678
+shankar ramnagar 234567
